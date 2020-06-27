@@ -68,7 +68,7 @@ public class SYS_RPC_ERROR extends ZToolPacket /*implements IRESPONSE, ISYSTEM*/
     public SYS_RPC_ERROR(int[] framedata) {
         this.Status = framedata[0];
         this.ErrCmd0 = framedata[1];
-        this.ErrCmd1 = framedata[3];
+        this.ErrCmd1 = framedata[2];
         super.buildPacket(new DoubleByte(ZToolCMD.SYS_RPC_ERROR), framedata);
     }
 
